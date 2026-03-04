@@ -23,8 +23,21 @@ jobs:
     name: "Instalação do ambiente NodeJS"
     runs-on: ubuntu-latest
     steps:
-      - name: "Verificaç~ão da versão do NodeJS atual"
+      - name: "Verificação da versão do NodeJS atual"
         run: node --version
+      - name: "Definição da versão 24.14.0 do NodeJS"
+        uses: actions/setup-node@v4.0.2
+        with:
+          node-version: '24.14.0'
+      - name: "Verificação da versão do NodeJS depois de instalar"
+        run: node --version
+      
+
+
+
+
+
+
 
     
 
